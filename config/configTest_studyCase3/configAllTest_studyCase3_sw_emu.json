@@ -1,0 +1,288 @@
+{
+    "verbose": true,
+    "outDir": "../../../out",
+    "logFile": "logFile.txt",
+    "global_performanceFile":"global_studyCase3_PerformanceResults.csv",
+    "global_powerFile":"global_studyCase3_PowerResults.csv",
+    "generate_global_PerformanceGraphics": false,
+    "generate_global_PowerGraphics": false,
+    "testList":[
+        {
+            "name":"test_studyCase3_a_sw_emu",
+            "performanceFile":"test_studyCase3_a_sw_emu_performanceResults.csv",
+            "powerFile":"test_studyCase3_a_sw_emu_powerResults.csv",
+            "generate_powerGraphics": true,
+            "generate_performanceGraphics": true,
+            "executionList":[
+                {
+                    "host": "studyCase3Host_a",
+                    "kernelPackage": "kerPack_studyCase3_a_mini_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_a_mini",
+                    "dataSize": "mini", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "studyCase3Host_a",
+                    "kernelPackage": "kerPack_studyCase3_a_small_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_a_small",
+                    "dataSize": "small", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "studyCase3Host_a",
+                    "kernelPackage": "kerPack_studyCase3_a_medium_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_a_medium",
+                    "dataSize": "medium", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "studyCase3Host_a",
+                    "kernelPackage": "kerPack_studyCase3_a_large_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_a_large",
+                    "dataSize": "large", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "studyCase3Host_a",
+                    "kernelPackage": "kerPack_studyCase3_a_extralarge_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_a_extralarge",
+                    "dataSize": "extralarge", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                }
+            ]
+        },
+        {
+            "name":"test_studyCase3_b_sw_emu",
+            "performanceFile":"test_studyCase3_b_sw_emu_performanceResults.csv",
+            "powerFile":"test_studyCase3_b_sw_emu_powerResults.csv",
+            "generate_powerGraphics": true,
+            "generate_performanceGraphics": true,
+            "executionList":[
+                {
+                    "host": "studyCase3Host_b",
+                    "kernelPackage": "kerPack_studyCase3_b_mini_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_b_mini",
+                    "dataSize": "mini", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "studyCase3Host_b",
+                    "kernelPackage": "kerPack_studyCase3_b_small_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_b_small",
+                    "dataSize": "small", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "studyCase3Host_b",
+                    "kernelPackage": "kerPack_studyCase3_b_medium_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_b_medium",
+                    "dataSize": "medium", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "studyCase3Host_b",
+                    "kernelPackage": "kerPack_studyCase3_b_large_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_b_large",
+                    "dataSize": "large", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "studyCase3Host_b",
+                    "kernelPackage": "kerPack_studyCase3_b_extralarge_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_b_extralarge",
+                    "dataSize": "extralarge", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                }
+            ]
+        },
+        {
+            "name":"test_studyCase3_c_sw_emu",
+            "performanceFile":"test_studyCase3_c_sw_emu_performanceResults.csv",
+            "powerFile":"test_studyCase3_c_sw_emu_powerResults.csv",
+            "generate_powerGraphics": true,
+            "generate_performanceGraphics": true,
+            "executionList":[
+                {
+                    "host": "studyCase3Host_c",
+                    "kernelPackage": "kerPack_studyCase3_c_mini_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_c_mini",
+                    "dataSize": "mini", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "studyCase3Host_c",
+                    "kernelPackage": "kerPack_studyCase3_c_small_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_c_small",
+                    "dataSize": "small", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "studyCase3Host_c",
+                    "kernelPackage": "kerPack_studyCase3_c_medium_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_c_medium",
+                    "dataSize": "medium", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "studyCase3Host_c",
+                    "kernelPackage": "kerPack_studyCase3_c_large_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_c_large",
+                    "dataSize": "large", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "studyCase3Host_c",
+                    "kernelPackage": "kerPack_studyCase3_c_extralarge_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_c_extralarge",
+                    "dataSize": "extralarge", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                }
+            ]
+        },
+        {
+            "name":"test_studyCase3_d_sw_emu",
+            "performanceFile":"test_studyCase3_d_sw_emu_performanceResults.csv",
+            "powerFile":"test_studyCase3_d_sw_emu_powerResults.csv",
+            "generate_powerGraphics": true,
+            "generate_performanceGraphics": true,
+            "executionList":[
+                {
+                    "host": "studyCase3Host_c",
+                    "kernelPackage": "kerPack_studyCase3_d_mini_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_d_mini",
+                    "dataSize": "mini", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "studyCase3Host_c",
+                    "kernelPackage": "kerPack_studyCase3_d_small_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_d_small",
+                    "dataSize": "small", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "studyCase3Host_c",
+                    "kernelPackage": "kerPack_studyCase3_d_medium_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_d_medium",
+                    "dataSize": "medium", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "studyCase3Host_c",
+                    "kernelPackage": "kerPack_studyCase3_d_large_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_d_large",
+                    "dataSize": "large", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "studyCase3Host_c",
+                    "kernelPackage": "kerPack_studyCase3_d_extralarge_sw_emu.xclbin",
+                    "kernel": "ker_studyCase3_d_extralarge",
+                    "dataSize": "extralarge", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                }
+            ]
+        }
+    ]
+ 
+}  

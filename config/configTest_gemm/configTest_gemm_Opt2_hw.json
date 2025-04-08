@@ -1,0 +1,81 @@
+{
+    "verbose": true,
+    "outDir": "../../../out",
+    "logFile": "logFile.txt",
+    "global_performanceFile":"global_gemm_PerformanceResults.csv",
+    "global_powerFile":"global_gemm_PowerResults.csv",
+    "generate_global_PerformanceGraphics": true,
+    "generate_global_PowerGraphics": true,
+    "testList":[
+        {
+            "name":"test_gemm_Opt2_hw",
+            "performanceFile":"test_gemm_Opt2_hw_performanceResults.csv",
+            "powerFile":"test_gemm_Opt2_hw_powerResults.csv",
+            "generate_powerGraphics": true,
+            "generate_performanceGraphics": true,
+            "executionList":[
+                {
+                    "host": "gemmHost_Opt2",
+                    "kernelPackage": "kerPack_gemm_Opt2_mini_hw.xclbin",
+                    "kernel": "ker_gemm_Opt2_mini",
+                    "dataSize": "mini", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "gemmHost_Opt2",
+                    "kernelPackage": "kerPack_gemm_Opt2_small_hw.xclbin",
+                    "kernel": "ker_gemm_Opt2_small",
+                    "dataSize": "small", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "gemmHost_Opt2",
+                    "kernelPackage": "kerPack_gemm_Opt2_medium_hw.xclbin",
+                    "kernel": "ker_gemm_Opt2_medium",
+                    "dataSize": "medium", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "gemmHost_Opt2",
+                    "kernelPackage": "kerPack_gemm_Opt2_large_hw.xclbin",
+                    "kernel": "ker_gemm_Opt2_large",
+                    "dataSize": "large", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "gemmHost_Opt2",
+                    "kernelPackage": "kerPack_gemm_Opt2_extralarge_hw.xclbin",
+                    "kernel": "ker_gemm_Opt2_extralarge",
+                    "dataSize": "extralarge", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                }
+            ]
+        }
+    ]
+ 
+}  

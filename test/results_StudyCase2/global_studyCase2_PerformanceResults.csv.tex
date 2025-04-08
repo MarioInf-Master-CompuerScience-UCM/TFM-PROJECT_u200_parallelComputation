@@ -1,0 +1,18 @@
+\begin{table}[H]
+    \centering
+    \begin{tabular}{llllll}
+    \rowcolor[HTML]{DAE8FC} \ &  \textbf{Mini} &  \textbf{Small} &  \textbf{Medium} &  \textbf{Large} &  \textbf{Extralarge} \\
+    \cellcolor[HTML]{DAE8FC} \textbf{CPU} & 88.53ms & 169.48ms & 322.63ms & 	597.34ms & 	1243.79ms \\
+    \rowcolor[HTML]{EFEFEF} \cellcolor[HTML]{DAE8FC} \textbf{Dispositivo (sin Opt)} & 403.04ms & 804.53ms & 1607.73ms & 	3212.65ms & 	6424.61ms \\
+    \cellcolor[HTML]{DAE8FC} \textbf{Dispositivo (stream)} & 221.15ms & 440.85ms & 880.26ms & 	1758.96ms & 	3517.07ms \\
+    \rowcolor[HTML]{EFEFEF} \cellcolor[HTML]{DAE8FC} \textbf{Dispositivo (pipeline)} & 23.09ms & 44.98ms & 89.10ms & 	176.72ms & 	351.56ms \\
+    \cellcolor[HTML]{DAE8FC} \textbf{Dispositivo (stream+pipeline)} & 13.76ms & 25.68ms & 51.71ms & 	98.68ms & 	202.16ms \\
+    \rowcolor[HTML]{EFEFEF} \cellcolor[HTML]{DAE8FC} \textbf{\textbf{{\emph{{\underline{{}}}}}}} &  &  &  & 	 & 	 \\
+    \cellcolor[HTML]{DAE8FC} \textbf{CPU->Dis (sin Opt)} & -78.03\% & -78.93\% & -79.93\% & 	-81.41\% & 	-80.64\% \\
+    \rowcolor[HTML]{EFEFEF} \cellcolor[HTML]{DAE8FC} \textbf{CPU->Dis (stream)} & -59.97\% & -61.56\% & -63.35\% & 	-66.04\% & 	-64.64\% \\
+    \cellcolor[HTML]{DAE8FC} \textbf{CPU->Dis (pipeline)} & 283.40\% & 276.76\% & 262.11\% & 	238.02\% & 	253.79\% \\
+    \rowcolor[HTML]{EFEFEF} \cellcolor[HTML]{DAE8FC} \textbf{CPU->Dis (stream+pipeline)} & 543.32\% & 560.01\% & 523.97\% & 	505.31\% & 	515.26\% \\
+    \end{tabular}
+    \caption[Resultados de rendimiento Caso de estudio 1]{Resultados de rendimiento Caso de estudio 1. Fuente: Creación propia}
+    \label{table_global_studyCase2_PerformanceResults}
+\end{table}

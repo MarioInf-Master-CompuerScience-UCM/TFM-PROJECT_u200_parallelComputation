@@ -1,0 +1,81 @@
+{
+    "verbose": true,
+    "outDir": "../../../out",
+    "logFile": "logFile.txt",
+    "global_performanceFile":"global_jacobi2d_PerformanceResults.csv",
+    "global_powerFile":"global_jacobi2d_PowerResults.csv",
+    "generate_global_PerformanceGraphics": true,
+    "generate_global_PowerGraphics": true,
+    "testList":[
+        {
+            "name":"test_jacobi2d_Opt1_sw_emu",
+            "performanceFile":"test_jacobi2d_Opt1_sw_emu_performanceResults.csv",
+            "powerFile":"test_jacobi2d_Opt1_sw_emu_powerResults.csv",
+            "generate_powerGraphics": true,
+            "generate_performanceGraphics": true,
+            "executionList":[
+                {
+                    "host": "jacobi2dHost_Opt1",
+                    "kernelPackage": "kerPack_jacobi2d_Opt1_mini_sw_emu.xclbin",
+                    "kernel": "ker_jacobi2d_Opt1_mini",
+                    "dataSize": "mini", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": false,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "jacobi2dHost_Opt1",
+                    "kernelPackage": "kerPack_jacobi2d_Opt1_small_sw_emu.xclbin",
+                    "kernel": "ker_jacobi2d_Opt1_small",
+                    "dataSize": "small", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": false,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "jacobi2dHost_Opt1",
+                    "kernelPackage": "kerPack_jacobi2d_Opt1_medium_sw_emu.xclbin",
+                    "kernel": "ker_jacobi2d_Opt1_medium",
+                    "dataSize": "medium", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": false,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "jacobi2dHost_Opt1",
+                    "kernelPackage": "kerPack_jacobi2d_Opt1_large_sw_emu.xclbin",
+                    "kernel": "ker_jacobi2d_Opt1_large",
+                    "dataSize": "large", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": false,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                },
+                {
+                    "host": "jacobi2dHost_Opt1",
+                    "kernelPackage": "kerPack_jacobi2d_Opt1_extralarge_sw_emu.xclbin",
+                    "kernel": "ker_jacobi2d_Opt1_extralarge",
+                    "dataSize": "extralarge", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": false,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                }
+            ]
+        }
+    ]
+ 
+}  

@@ -1,0 +1,6 @@
+X,CPU execution time,CPU optimized execution time,Opt0 execution time,Opt1 execution time,Opt2 execution time,Opt3 execution time,Opt4 execution time
+mini,0.592760,6.884080,4.457000,1.752800,1.090000,0.680200,0.808400
+small,9.245120,4.839240,23.022200,14.124000,13.777200,5.373200,3.525200
+medium,213.674840,25.491160,3251.571200,472.953600,468.438600,207.229600,49.515800
+large,-nan,-nan
+extralarge,-nan,-nan

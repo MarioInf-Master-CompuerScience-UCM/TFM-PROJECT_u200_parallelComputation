@@ -1,0 +1,81 @@
+{
+    "verbose": true,
+    "outDir": "../../../out",
+    "logFile": "logFile.txt",
+    "global_performanceFile":"global_vectorAdd_PerformanceResults.csv",
+    "global_powerFile":"global_vectorAdd_PowerResults.csv",
+    "generate_global_PerformanceGraphics": true,
+    "generate_global_PowerGraphics": true,
+    "testList":[
+        {
+            "name":"test_vectorAdd_Opt1_hw",
+            "performanceFile":"test_vectorAdd_Opt1_hw_performanceResults.csv",
+            "powerFile":"test_vectorAdd_Opt1_hw_powerResults.csv",
+            "generate_powerGraphics": true,
+            "generate_performanceGraphics": true,
+            "executionList":[
+                {
+                    "host": "vectorAddHost_Opt1",
+                    "kernelPackage": "kerPack_vectorAdd_Opt1_mini_hw.xclbin",
+                    "kernel": "ker_vectorAdd_Opt1_mini",
+                    "dataSize": "mini", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 3,
+                    "numExecutions_hot": 5
+                },
+                {
+                    "host": "vectorAddHost_Opt1",
+                    "kernelPackage": "kerPack_vectorAdd_Opt1_small_hw.xclbin",
+                    "kernel": "ker_vectorAdd_Opt1_small",
+                    "dataSize": "small", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 3,
+                    "numExecutions_hot": 5
+                },
+                {
+                    "host": "vectorAddHost_Opt1",
+                    "kernelPackage": "kerPack_vectorAdd_Opt1_medium_hw.xclbin",
+                    "kernel": "ker_vectorAdd_Opt1_medium",
+                    "dataSize": "medium", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 3,
+                    "numExecutions_hot": 5
+                },
+                {
+                    "host": "vectorAddHost_Opt1",
+                    "kernelPackage": "kerPack_vectorAdd_Opt1_large_hw.xclbin",
+                    "kernel": "ker_vectorAdd_Opt1_large",
+                    "dataSize": "large", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 3,
+                    "numExecutions_hot": 5
+                },
+                {
+                    "host": "vectorAddHost_Opt1",
+                    "kernelPackage": "kerPack_vectorAdd_Opt1_extralarge_hw.xclbin",
+                    "kernel": "ker_vectorAdd_Opt1_extralarge",
+                    "dataSize": "extralarge", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,  
+                    "printResults": false,
+                    "numExecutions_cool": 3,
+                    "numExecutions_hot": 5
+                }
+            ]
+        }
+    ]
+ 
+}  

@@ -1,0 +1,34 @@
+{
+    "verbose": true,
+    "outDir": "../../../out",
+    "logFile": "logFile.txt",
+    "global_performanceFile":"global_vectorAdd_PerformanceResults.csv",
+    "global_powerFile":"global_vectorAdd_PowerResults.csv",
+    "generate_global_PerformanceGraphics": true,
+    "generate_global_PowerGraphics": true,
+    "testList":[
+        {
+            "name":"test_vectorAdd_Opt0_hw_emu",
+            "performanceFile":"test_vectorAdd_Opt0_hw_emu_performanceResults.csv",
+            "powerFile":"test_vectorAdd_Opt0_hw_emu_powerResults.csv",
+            "generate_powerGraphics": true,
+            "generate_performanceGraphics": true,
+            "generatePictures": true,
+            "executionList":[
+                {
+                    "host": "vectorAddHost_Opt0",
+                    "kernelPackage": "kerPack_vectorAdd_Opt0_mini_hw_emu.xclbin",
+                    "kernel": "ker_vectorAdd_Opt0_mini",
+                    "dataSize": "mini",
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": false,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                }
+            ]
+        }
+    ]
+ 
+}  

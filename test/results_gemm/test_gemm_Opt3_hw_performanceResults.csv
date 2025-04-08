@@ -1,0 +1,4 @@
+X,CPU execution time,CPU optimized execution time,Device execution time,Transmision (S+R) time,Send to device time,Recieve from device time
+mini,0.628000,1.383600,0.332000,0.496800,0.236000,0.260800
+small,10.389600,6.643800,5.028800,0.773600,0.387800,0.385800
+medium,217.928400,15.587000,184.511000,0.701800,0.310800,0.391000

@@ -1,0 +1,33 @@
+{
+    "verbose": true,
+    "outDir": "../../../out",
+    "logFile": "logFile.txt",
+    "global_performanceFile":"global_jacobi2d_PerformanceResults.csv",
+    "global_powerFile":"global_jacobi2d_PowerResults.csv",
+    "generate_global_PerformanceGraphics": true,
+    "generate_global_PowerGraphics": true,
+    "testList":[
+        {
+            "name":"test_jacobi2d_Opt4_hw_emu",
+            "performanceFile":"test_jacobi2d_Opt4_hw_emu_performanceResults.csv",
+            "powerFile":"test_jacobi2d_Opt4_hw_emu_powerResults.csv",
+            "generate_powerGraphics": true,
+            "generate_performanceGraphics": true,
+            "executionList":[
+                {
+                    "host": "jacobi2dHost_Opt4",
+                    "kernelPackage": "kerPack_jacobi2d_Opt4_mini_hw_emu.xclbin",
+                    "kernel": "ker_jacobi2d_Opt4_mini",
+                    "dataSize": "mini", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": false,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                }
+            ]
+        }
+    ]
+ 
+}  

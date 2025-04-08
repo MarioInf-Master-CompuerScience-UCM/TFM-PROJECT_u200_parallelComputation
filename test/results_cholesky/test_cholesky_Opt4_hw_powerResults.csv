@@ -1,0 +1,4 @@
+X,Device energy consumption,Device execution time,CPU energy consumption,CPU execution time,CPU optimized energy consumption,CPU optimized execution time,CPU-1,CPU-2
+mini,26.180794,0.281800,110.774646,0.628200,117.697310,8.830400,42.475612,75.221698
+small,26.008315,2.864600,63.989057,9.506200,138.362059,1.983000,67.734540,70.627520
+medium,26.166978,48.715600,65.488171,214.623600,145.590516,25.952200,74.497477,71.093039

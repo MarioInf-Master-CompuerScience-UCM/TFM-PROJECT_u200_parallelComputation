@@ -1,0 +1,33 @@
+{
+    "verbose": true,
+    "outDir": "../../../out",
+    "logFile": "logFile.txt",
+    "global_performanceFile":"global_cholesky_PerformanceResults.csv",
+    "global_powerFile":"global_cholesky_PowerResults.csv",
+    "generate_global_PerformanceGraphics": true,
+    "generate_global_PowerGraphics": true,
+    "testList":[
+        {
+            "name":"test_cholesky_Opt3_sw_emu",
+            "performanceFile":"test_cholesky_Opt3_sw_emu_performanceResults.csv",
+            "powerFile":"test_cholesky_Opt3_sw_emu_powerResults.csv",
+            "generate_powerGraphics": true,
+            "generate_performanceGraphics": true,
+            "executionList":[
+                {
+                    "host": "choleskyHost_Opt3",
+                    "kernelPackage": "kerPack_cholesky_Opt3_mini_hw_emu.xclbin",
+                    "kernel": "ker_cholesky_Opt3_mini",
+                    "dataSize": "mini", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": false,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                }
+            ]
+        }
+    ]
+ 
+}  

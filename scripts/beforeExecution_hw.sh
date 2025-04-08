@@ -1,0 +1,2 @@
+source venv/bin/activate
+unset XCL_EMULATION_MODE

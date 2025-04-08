@@ -1,0 +1,33 @@
+{
+    "verbose": true,
+    "outDir": "../../../out",
+    "logFile": "logFile.txt",
+    "global_performanceFile":"global_studyCase3_PerformanceResults.csv",
+    "global_powerFile":"global_studyCase3_PowerResults.csv",
+    "generate_global_PerformanceGraphics": false,
+    "generate_global_PowerGraphics": false,
+    "testList":[
+        {
+            "name":"test_studyCase3_d_hw_emu",
+            "performanceFile":"test_studyCase3_d_hw_emu_performanceResults.csv",
+            "powerFile":"test_studyCase3_d_hw_emu_powerResults.csv",
+            "generate_powerGraphics": true,
+            "generate_performanceGraphics": true,
+            "executionList":[
+                {
+                    "host": "studyCase3Host_c",
+                    "kernelPackage": "kerPack_studyCase3_d_mini_hw_emu.xclbin",
+                    "kernel": "ker_studyCase3_d_mini",
+                    "dataSize": "mini", 
+                    "measurePower_CPU": true, 
+                    "measurePower_CPUopt": true, 
+                    "measurePower_device": true,   
+                    "printResults": false,
+                    "numExecutions_cool": 0,
+                    "numExecutions_hot": 1
+                }
+            ]
+        }
+    ]
+ 
+}  
